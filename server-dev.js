@@ -3,6 +3,7 @@ var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpack = require('webpack');
 var webpackConfig = require('./webpack.dev.config.js');
 var app = express();
+var path = require('path');
 
 var compiler = webpack(webpackConfig);
 
@@ -17,6 +18,10 @@ app.use(webpackDevMiddleware(compiler, {
     },
     historyApiFallback: true,
 }));
+
+app.get('*', function (request, response){
+    response.sendFile(path.resolve(__dirname, 'assets', 'index.html'));
+});
 
 var server = app.listen(3000, function(){
     var host = server.address().address;

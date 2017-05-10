@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavigationBar from './NavigationBar';
 import Jumbotron from './Jumbotron';
-import WorkExp from './WorkExp';
+import NavigationBar from './NavigationBar';
+import EducHis from './EducHis';
 
-class Work extends React.Component {
+class Education extends React.Component {
   constructor(){
     super();
     this.state = {
-      title: 'Work',
-      summary: 'This work experience'
+      title: 'Education',
+      summary: 'This is my education'
     };
   }
   render (){
@@ -17,14 +17,14 @@ class Work extends React.Component {
       <div>
         <NavigationBar />
         <Jumbotron title={this.state.title} summary={this.state.summary}/>
-        <WorkExp />
+        <EducHis />
       </div>
     )
   }
 }
 
-//Work.propTypes = {
-  //text: PropTypes.string.isRequired,
-//};
+/*Education.propTypes = {
+  text: PropTypes.string.isRequired,
+};*/
 
-export default Work;
+export default Education;

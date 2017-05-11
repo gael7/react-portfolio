@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Jumbotron from './Jumbotron';
 import NavigationBar from './NavigationBar';
 import BioContainer from './BioContainer';
@@ -52,9 +51,5 @@ class Bio extends React.Component {
     )
   }
 }
-
-/*Bio.propTypes = {
-  text: PropTypes.string.isRequired,
-};*/
 
 export default Bio;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class BioContainer extends React.Component {
   constructor(){
@@ -32,9 +31,5 @@ class BioContainer extends React.Component {
     )
   }
 }
-
-/*Bio.propTypes = {
-  text: PropTypes.string.isRequired,
-};*/
 
 export default BioContainer;

@@ -1,9 +1,45 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class NavigationBar extends React.Component {
     constructor(){
         super();
+        const sections = [{
+          href: "/",
+          icon: "person",
+          text: "About Me"
+        },{
+          href: "/work",
+          icon: "business_center",
+          text: "Work Experience"
+        },{
+          href: "/portfolio",
+          icon: "web",
+          text: "Portfolio"
+        },{
+          href: "/projects",
+          icon: "assignment",
+          text: "Projects"
+        },{
+          href: "/education",
+          icon: "school",
+          text: "Education"
+        }];
+
+        const socials = [{
+          href: "https://www.linkedin.com/in/gaelarrambide",
+          src: "linkedin.png",
+        },{
+          href: "https://github.com/gael7",
+          src: "github.png",
+        },{
+          href: "http://stackoverflow.com/users/6636221/gael-arrambide",
+          src: "stackoverflow.png",
+        }];
+
+        this.state = {
+          sections,
+          socials
+        }
     }
 
     render() {
@@ -14,23 +50,21 @@ class NavigationBar extends React.Component {
               <ul id="slide-out" className="side-nav">
                 <li><div className="userView">
                   <div className="background">
-                    <img src="images/picture1.jpg" />
+                    <img src="images/background2.jpg" />
                   </div>
                   <a href="#!user"><img className="circle" src="images/logo.jpg" /></a>
                   <a href="#!name"><span className="white-text name">Gael Arrambide</span></a>
                   <a href="#!email"><span className="white-text email">gael_arrambide@hotmail.com</span></a>
                 </div></li>
-                <li><a href="/"><i className="material-icons black-text">person</i>About Me</a></li>
-                <li><a href="/work"><i className="material-icons">business_center</i>Work Experience</a></li>
-                <li><a href="/portfolio"><i className="material-icons">web</i>Portfolio</a></li>
-                <li><a href="/projects"><i className="material-icons">assignment</i>Projects</a></li>
-                <li><a href="/education"><i className="material-icons">school</i>Education</a></li>
+                {this.state.sections.map((section, index)=>(
+                  <li key={index}><a href={section.href}><i className="material-icons black-text">{section.icon}</i>{section.text}</a></li>
+                ))}
                 <br />
                 <li><a className="subheader center">Connect with Me</a></li>
                 <div className="row">
-                    <a href="https://www.linkedin.com/in/gaelarrambide"><img className="col s4 circle responsive-img" src="images/linkedin.png" /></a>
-                    <a className="" href="https://github.com/gael7"><img className="col s4 circle responsive-img " src="images/github.png" /></a>
-                    <a href="http://stackoverflow.com/users/6636221/gael-arrambide"><img className="col s4 circle responsive-img " src="images/stackoverflow.png" /></a>
+                  {this.state.socials.map((social, index2)=>(
+                      <a key={index2} href={social.href}><img className="col s4 circle responsive-img " src={"images/"+social.src} /></a>
+                  ))}
                 </div>
               </ul>
 
@@ -44,9 +78,5 @@ class NavigationBar extends React.Component {
         );
     }
 }
-
-/*NavigationBar.propTypes = {
-  text: PropTypes.string.isRequired,
-};*/
 
 export default NavigationBar;

@@ -21,8 +21,10 @@ class BioIcons extends React.Component {
   }
 }
 
-/*Bio.propTypes = {
-  text: PropTypes.string.isRequired,
-};*/
+BioIcons.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired
+};
 
 export default BioIcons;

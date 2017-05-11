@@ -21,5 +21,9 @@ class Jumbotron extends React.Component {
     );
   }
 }
+Jumbotron.PropTypes = {
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired
+}
 
 export default Jumbotron;

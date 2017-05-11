@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class BioResume extends React.Component {
   constructor(){
@@ -23,9 +22,5 @@ class BioResume extends React.Component {
     )
   }
 }
-
-/*Bio.propTypes = {
-  text: PropTypes.string.isRequired,
-};*/
 
 export default BioResume;

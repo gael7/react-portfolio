@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import NavigationBar from './NavigationBar';
 import Jumbotron from './Jumbotron';
 import WorkExp from './WorkExp';
@@ -23,8 +22,5 @@ class Work extends React.Component {
   }
 }
 
-//Work.propTypes = {
-  //text: PropTypes.string.isRequired,
-//};
 
 export default Work;

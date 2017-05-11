@@ -32,7 +32,7 @@ class BioInterest extends React.Component {
             </div>
           </div>
         </div>
-        <div className="parallax"><img src="/images/background1.jpg" alt="Unsplashed background img 1" /></div>
+        <div className="parallax"><img src="/images/background3.jpg" alt="Unsplashed background img 1" /></div>
       </div>
     );
   }

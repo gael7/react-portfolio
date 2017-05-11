@@ -109,7 +109,7 @@ class EducHis extends React.Component {
                 <div className="col s12 m6">
                   <h5 className="center">{eduhis.title}</h5>
                   {eduhis.activities.map((actv, index2)=>(
-                    <ul><strong>{actv.year}</strong> {"- "+actv.name+ " "}<strong>{actv.role}</strong><br />
+                    <ul key={index2}><strong>{actv.year}</strong> {"- "+actv.name+ " "}<strong>{actv.role}</strong><br />
                     {actv.description}</ul>
                   ))}
                 </div>

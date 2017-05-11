@@ -14,7 +14,7 @@ class NavigationBar extends React.Component {
               <ul id="slide-out" className="side-nav">
                 <li><div className="userView">
                   <div className="background">
-                    <img src="images/background1.jpg" />
+                    <img src="images/picture1.jpg" />
                   </div>
                   <a href="#!user"><img className="circle" src="images/logo.jpg" /></a>
                   <a href="#!name"><span className="white-text name">Gael Arrambide</span></a>

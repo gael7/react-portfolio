@@ -1,6 +1,8 @@
 var path = require('path');
+var webpack = require('webpack');
 
 var config = {
+    devtool: "source-map",
     context: path.join(__dirname, 'client'),
     entry: [
         './index.js',
@@ -26,7 +28,13 @@ var config = {
         path.join(__dirname, "src"),
         "node_modules"
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+   })
+  ]
 };
 
 module.exports = config;

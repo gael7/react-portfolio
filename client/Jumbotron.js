@@ -7,12 +7,12 @@ class Jumbotron extends React.Component {
   }
   render(){
     return(
-      <div id="index-banner" className="parallax-container">
+      <div className="parallax-container">
         <div className="section no-pad-bot">
           <div className="container">
             <h1 className="header center white-text">{this.props.title}</h1>
             <div className="row center">
-              <h5 className="header col s12 light">{this.props.summary}</h5>
+              <h5 className="header col s12 white-text">{this.props.summary}</h5>
             </div>
           </div>
         </div>

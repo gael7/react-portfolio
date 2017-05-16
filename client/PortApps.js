@@ -46,12 +46,11 @@ class PortApps extends React.Component {
   }
     render(){
       return(
-        <div className="container">
           <div className="section">
             <div className="row">
               {this.state.apps.map((app, index)=>(
-              <div  key={index} className="col s12 m6">
-                <div className="card sticky-action black">
+              <div  key={index} className="col s12 m4">
+                <div className="card sticky-action red">
                   <div className="card-image waves-effect waves-block waves-light">
                     <img className="activator" src={"images/"+app.screenshot} />
                   </div>
@@ -61,9 +60,10 @@ class PortApps extends React.Component {
                     {app.technologies.map((tech, index2)=>(
                       <div key={index2} className="chip">{tech}</div>
                     ))}
+                    <br/><br/>
                   </div>
                   <div className="card-action">
-                    <a href={app.github}><i className="small material-icons">code</i></a><a href={app.heroku}><i className="right small material-icons">web</i></a>
+                    <a href={app.github}><i className="small material-icons white-text">code</i></a><a href={app.heroku}><i className="right small material-icons white-text">web</i></a>
                   </div>
                   <div className="card-reveal">
                     <span className="card-title black-text">{app.name}<i className="material-icons right">close</i></span>
@@ -74,7 +74,6 @@ class PortApps extends React.Component {
               ))}
             </div>
           </div>
-        </div>
       )}
   }
 

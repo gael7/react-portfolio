@@ -7,13 +7,14 @@ class Projects extends React.Component {
     super();
     this.state = {
       title: 'Projects',
-      summary: 'This are my group projects'
+      summary: 'I have work in 3 major projects during my 24 week Coding Boot Camp where the first 2 of them I had the pleasure to work with awesome developers and the last one on my own to have the best full-stack development experience.',
+      color: 'yellow darken-1'
     };
   }
   render (){
     return(
       <div>
-        <NavigationBar />
+        <NavigationBar color={this.state.color}/>
         <Jumbotron title={this.state.title} summary={this.state.summary}/>
       </div>
     )

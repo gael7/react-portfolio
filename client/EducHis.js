@@ -87,18 +87,18 @@ class EducHis extends React.Component {
 }
   render(){
     return(
-      <div className="container">
         <div className="section">
           <div className="row">
             {this.state.his.map((eduhis, index)=>(
               <div key={index} className="col s12 m12">
                 <div className="col s12 m6">
-                  <div className="card black">
-                    <div className="card-content white-text">
+                  <div className="card green">
+                    <div className="card-content card-with-action white-text">
                       <div className='col s3'><img src={"images/"+eduhis.image} alt='UT Logo' className='circle responsive-img' /></div>
                       <span className="card-title">{eduhis.name}</span>
                       <ul>{eduhis.degree +", " + eduhis.field}</ul>
                       <ul><i className="tiny material-icons">date_range</i> {eduhis.date}</ul>
+                      <br/><br />
                     <div className="card-action">
                       <a href={eduhis.visit}>Visit</a>
                     </div>
@@ -116,7 +116,7 @@ class EducHis extends React.Component {
             ))}
           </div>
         </div>
-      </div>
+
     )}
 }
 export default EducHis;

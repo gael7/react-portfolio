@@ -25,7 +25,8 @@ class Bio extends React.Component {
 
     this.state = {
       title: 'Gael Arrambide',
-      summary: 'Full Stack Web Developer',
+      summary: 'Full-Stack Web Developer',
+      color: 'black',
       icons
     };
   }
@@ -33,7 +34,7 @@ class Bio extends React.Component {
   render (){
     return(
       <div>
-        <NavigationBar />
+        <NavigationBar color={this.state.color}/>
         <Jumbotron title={this.state.title} summary={this.state.summary} />
         <BioContainer />
         <BioResume />

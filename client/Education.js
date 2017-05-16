@@ -8,13 +8,14 @@ class Education extends React.Component {
     super();
     this.state = {
       title: 'Education',
-      summary: 'This is my education'
+      summary: 'I recently graduated from The Coding Bootcamp at UT Austin to become a Full-Stack Developer. On 2014 I graduated as a Mechatronic Engineer with an overall of 88.29 from Instituto Tecnológico de Nuevo Laredo. During my nine semesters at university I participated on 3 national robotics contests called “Torneo Mexicano de Robótica” on different cities around Mexico.',
+      color: 'green'
     };
   }
   render (){
     return(
       <div>
-        <NavigationBar />
+        <NavigationBar color={this.state.color}/>
         <Jumbotron title={this.state.title} summary={this.state.summary}/>
         <EducHis />
       </div>

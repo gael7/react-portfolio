@@ -1,6 +1,6 @@
 import React from 'react';
-import Jumbotron from './Jumbotron';
 import NavigationBar from './NavigationBar';
+import ProjApps from './ProjApps';
 
 class Projects extends React.Component {
   constructor(){
@@ -13,9 +13,9 @@ class Projects extends React.Component {
   }
   render (){
     return(
-      <div>
+      <div className="projects-background">
         <NavigationBar color={this.state.color}/>
-        <Jumbotron title={this.state.title} summary={this.state.summary}/>
+        <ProjApps />
       </div>
     )
   }

@@ -55,8 +55,7 @@ class NavigationBar extends React.Component {
               <div className={"nav-wrapper "+this.props.color}>
               <ul id="slide-out" className="side-nav">
                 <li><div className="userView">
-                  <div className="background">
-                    <img src="images/background2.jpg" />
+                  <div className="background sidebar-background">
                   </div>
                   <a href="#!user"><img className="circle" src="images/logo.jpg" /></a>
                   <a href="#!name"><span className="white-text name">Gael Arrambide</span></a>

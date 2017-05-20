@@ -9,15 +9,14 @@ class Portfolio extends React.Component {
     this.state = {
       title: 'Portfolio',
       summary: 'My portfolio consists on 5 of my best apps I code during my 24 week Coding Boot Camp with a screenshot of the main page, technologies used, a brief description of the functionality and links for the github project and the web app that you are welcome to visit.',
-      color: 'red'
+      color: 'grey'
     };
 
   }
   render (){
     return(
-      <div>
+      <div className="cont-background">
         <NavigationBar color={this.state.color}/>
-        <Jumbotron title={this.state.title} summary={this.state.summary}/>
         <PortApps />
       </div>
     )

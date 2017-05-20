@@ -9,14 +9,13 @@ class Work extends React.Component {
     this.state = {
       title: 'Work',
       summary: 'My work experience consists mostly on retail where I gain experience with different skills like customer service, merchandising and leadership. My most meaningful job experience was as a tutor for 6 months for kids to build robots using Lego Educational Kits.',
-      color: 'blue darken-4',
+      color: 'grey darken-2',
     };
   }
   render (){
     return(
-      <div>
+      <div className="cont-background">
         <NavigationBar color={this.state.color}/>
-        <Jumbotron title={this.state.title} summary={this.state.summary}/>
         <WorkExp />
       </div>
     )

@@ -38,6 +38,7 @@ class Bio extends React.Component {
         <Jumbotron title={this.state.title} summary={this.state.summary} />
         <BioContainer />
         <BioResume />
+        <div className="cont-background">
         <div className="container">
           <div className="section">
             <div className="row" id="iconSection">
@@ -47,6 +48,7 @@ class Bio extends React.Component {
             </div>
           </div>
         </div>
+      </div>
         <BioInterest />
       </div>
     )

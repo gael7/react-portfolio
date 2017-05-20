@@ -1,4 +1,5 @@
 import React from 'react';
+import PortCard from './PortCard';
 
 class PortApps extends React.Component {
   constructor(){
@@ -48,32 +49,19 @@ class PortApps extends React.Component {
       return(
           <div className="section">
             <div className="row">
-              {this.state.apps.map((app, index)=>(
-              <div  key={index} className="col s12 m4">
-                <div className="card sticky-action red">
-                  <div className="card-image waves-effect waves-block waves-light">
-                    <img className="activator" src={"images/"+app.screenshot} />
-                  </div>
-                  <div className="card-content">
-                    <span className="card-title activator white-text">{app.name}<i className="material-icons right">more_vert</i></span>
-                    <p className="white-text">Technologies:</p>
-                    {app.technologies.map((tech, index2)=>(
-                      <div key={index2} className="chip">{tech}</div>
-                    ))}
-                    <br/><br/>
-                  </div>
-                  <div className="card-action">
-                    <a href={app.github}><i className="small material-icons white-text">code</i></a><a href={app.heroku}><i className="right small material-icons white-text">web</i></a>
-                  </div>
-                  <div className="card-reveal">
-                    <span className="card-title black-text">{app.name}<i className="material-icons right">close</i></span>
-                    <p>{app.description}</p>
-                  </div>
-                </div>
-              </div>
-              ))}
-            </div>
-          </div>
+            {this.state.apps.map((app, index)=>(
+                    index<3 &&
+                     <PortCard key={index} name={app.name} description={app.description} technologies={app.technologies} github={app.github} heroku={app.heroku} screenshot={app.screenshot} />
+           ))}
+           </div>
+           <div className="row">
+             {this.state.apps.map((app,index)=>(
+               index>=3 &&
+               <PortCard key={index} name={app.name} description={app.description} technologies={app.technologies} github={app.github} heroku={app.heroku} screenshot={app.screenshot} />
+
+             ))}
+           </div>
+         </div>
       )}
   }
 

@@ -12,15 +12,15 @@ class BioContainer extends React.Component {
   }
   render (){
     return(
-      <div>
+      <div className="cont-background">
         <div className="container">
           <div className="section">
             <div className="row">
-              <div className="col s12 center" id="aboutMe">
+              <div className="col s12 center white-text" id="aboutMe">
                 <h4>{this.state.title}</h4>
                 <div className="col s12 m6">
-                  <p className="left-align black-text">{this.state.aboutMe}</p>
-                  <p className="left-align black-text">{this.state.aboutMe2}</p>
+                  <p className="left-align">{this.state.aboutMe}</p>
+                  <p className="left-align">{this.state.aboutMe2}</p>
                 </div>
                 <div className="col s12 m6">
                   <img src={this.state.src} />

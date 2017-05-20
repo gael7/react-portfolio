@@ -53,7 +53,7 @@ class ProjApps extends React.Component {
         <div className="row">
           {this.state.apps.map((app, index)=>(
           <div  key={index} className="col s12 m4">
-            <div className="card sticky-action yellow darken-1">
+            <div className="card sticky-action blue-grey">
               <div className="card-image waves-effect waves-block waves-light">
                 <img className="activator" src={"images/"+app.screenshot} />
               </div>

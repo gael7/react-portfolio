@@ -13,22 +13,22 @@ class NavigationBar extends React.Component {
           href: "/work",
           icon: "business_center",
           text: "Work Experience",
-          color: "blue-text text-darken-4"
+          color: "grey-text text-darken-2"
         },{
           href: "/portfolio",
           icon: "web",
           text: "Portfolio",
-          color: "red-text"
+          color: "grey-text"
         },{
           href: "/projects",
           icon: "assignment",
           text: "Projects",
-          color: "yellow-text text-darken-1",
+          color: "blue-grey-text",
         },{
           href: "/education",
           icon: "school",
           text: "Education",
-          color: "green-text"
+          color: "blue-text text-darken-4"
         }];
 
         const socials = [{

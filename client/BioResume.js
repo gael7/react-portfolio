@@ -25,7 +25,7 @@ class BioResume extends React.Component {
                   ))}
               </div>
               <div className="col s12 m6">
-              <object data="./resume.pdf" width="100%" height="450" type='application/pdf' />
+              <object data="./Resume.pdf" width="100%" height="450" type='application/pdf' />
               </div>
             </div>
           </div>

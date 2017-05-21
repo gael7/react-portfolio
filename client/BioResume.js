@@ -3,11 +3,9 @@ import React from 'react';
 class BioResume extends React.Component {
   constructor(){
     super();
-   const skills = ["HTML", "CSS", "Javascript", "jQuery", "Node.js", "Express"];
-   const skills2 = ["React.js", "Bootstrap", "Materialize", "MySQL", "Firebase", "MongoDB"];
+   const skills = ["HTML", "CSS", "Javascript", "jQuery", "Node.js", "Express", "React.js", "Bootstrap", "Materialize", "MySQL", "Firebase", "MongoDB"];
    this.state = {
-     skills,
-     skills2
+     skills
    };
   }
   render (){
@@ -17,23 +15,17 @@ class BioResume extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m6">
-                <div className="col s6 m6">
-                  <ul className="collection">
-                    {this.state.skills.map((skill, index) => (
-                      <li key={index} className="collection-item">{skill}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="col s6 m6">
-                  <ul className="collection">
-                    {this.state.skills2.map((skill2, index2) => (
-                      <li key={index2} className="collection-item">{skill2}</li>
-                    ))}
-                  </ul>
-                </div>
+                <h5 className="center white-text">Code Skills</h5>
+                  {this.state.skills.map((skill, index) => (
+                    <div key={index} className="col s6 m4">
+                      <div className="card-panel black center-align hoverable">
+                        <span className="white-text">{skill}</span>
+                      </div>
+                    </div>
+                  ))}
               </div>
               <div className="col s12 m6">
-              <object data="./Resume.pdf" width="100%" height="450" type='application/pdf' />
+              <object data="./resume.pdf" width="100%" height="450" type='application/pdf' />
               </div>
             </div>
           </div>

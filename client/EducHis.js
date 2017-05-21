@@ -92,7 +92,7 @@ class EducHis extends React.Component {
             {this.state.his.map((eduhis, index)=>(
               <div key={index} className="col s12 m12">
                 <div className="col s12 m6">
-                  <div className="card blue darken-4">
+                  <div className="card blue darken-4 hoverable">
                     <div className="card-content card-with-action white-text">
                       <div className='col s3'><img src={"images/"+eduhis.image} alt='UT Logo' className='circle responsive-img' /></div>
                       <span className="card-title">{eduhis.name}</span>

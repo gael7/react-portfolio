@@ -39,17 +39,16 @@ class Bio extends React.Component {
         <BioContainer />
         <BioResume />
         <div className="cont-background">
-        <div className="container">
-          <div className="section">
-            <div className="row" id="iconSection">
-              {this.state.icons.map((icon, index) => (
-                <BioIcons key={index} icon={icon.icon} title={icon.title} info={icon.info}/>
-              ))}
+          <div className="container">
+            <div className="section">
+              <div className="row" id="iconSection">
+                {this.state.icons.map((icon, index) => (
+                  <BioIcons key={index} icon={icon.icon} title={icon.title} info={icon.info}/>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        <BioInterest />
       </div>
     )
   }

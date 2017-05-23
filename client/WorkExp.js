@@ -54,8 +54,8 @@ class WorkExp extends React.Component {
         <div className="section">
           <div className="row">
           {this.state.experience.map((exp, index)=>(
-            <div key={index} className="col s12 m6">
-              <div className="col s12 m6">
+            <div key={index} className="col s12 m12 l12 xl6">
+              <div className="col s12 m6 l6 xl6">
                 <div className="card grey darken-2 hoverable">
                   <div className="card-content white-text">
                     <span className="card-title">{exp.position}</span>
@@ -66,7 +66,7 @@ class WorkExp extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col s12 m5 white-text">
+              <div className="col s12 m6 l6 xl6 white-text">
                 <ul id="responsabilities">
                   {exp.responsabilities.map((res, indexR)=>(
                     <li key={indexR}><i className="tiny material-icons">chevron_right</i>{res}</li>

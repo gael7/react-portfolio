@@ -4,7 +4,7 @@ import NavigationBar from './NavigationBar';
 import BioContainer from './BioContainer';
 import BioResume from './BioResume';
 import BioIcons from './BioIcons';
-import BioInterest from './BioInterest';
+import BioResume0 from './BioResume0';
 
 class Bio extends React.Component {
   constructor(){
@@ -49,6 +49,7 @@ class Bio extends React.Component {
             </div>
           </div>
         </div>
+        <BioResume0 />
       </div>
     )
   }

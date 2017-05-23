@@ -7,7 +7,7 @@ class PortCard extends React.Component {
   }
     render(){
       return(
-              <div className="col s12 m4">
+              <div className="col s12 m12 l4 xl4">
                 <div className="card sticky-action grey hoverable">
                   <div className="card-image waves-effect waves-block waves-light">
                     <img className="activator" src={"images/"+this.props.screenshot} />

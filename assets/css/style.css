@@ -36,22 +36,6 @@
    width: 150px !important;
  }
 
- .skill-horizontal{
-   height: 150px !important;
-   width: 200px !important;
- }
-
- .skill-horizontal2{
-   height: 80px !important;
-   width: 150px !important;
-   margin-top: 50px;
- }
-
- .skill-vertical{
-   height: 150px !important;
-   width: 100px !important;
- }
-
  .hoverable:hover {
    box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9) !important;
  }

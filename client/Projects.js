@@ -15,7 +15,9 @@ class Projects extends React.Component {
     return(
       <div className="full-background">
         <NavigationBar color={this.state.color}/>
+        <div className="cont-background">
         <ProjApps />
+        </div>
       </div>
     )
   }

@@ -11,7 +11,7 @@ class BioResume0 extends React.Component {
           <div className="container">
             <div className="row center">
               <div className="col s12 m12">
-              <object data="./Resume.pdf" width="100%" height="450" type='application/pdf' />
+              <object data="./Gael_Arrambide_Developer.pdf" width="100%" height="450" type='application/pdf' />
               </div>
             </div>
           </div>

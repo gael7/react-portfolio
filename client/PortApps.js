@@ -35,10 +35,17 @@ class PortApps extends React.Component {
       },{
         name: "News-scrape",
         description: "This is an app that will scrape news from the Real Madrid web page getting the headline, the picture and a brief description on the new then you can add one note for it. First thing to do in the app is click on the Scrape button that will do the scrape for us the 10 latest news  and then we go back to the main page and you will see those news ready to add notes to add with the news you had before. In order to add a note to the news you need to press the note button inside the new panel and you will see a modal where you write the title of the note and the content of the note.",
-        technologies: ["HTML","CSS", "Bootstrap", "Node.js", "jQuery", "MongoDB"],
+        technologies: ["HTML", "CSS", "Bootstrap", "Javascript", "Node.js", "jQuery", "MongoDB"],
         github: "https://github.com/gael7/news-scrape",
         heroku: "https://lit-mesa-52894.herokuapp.com",
         screenshot: "news-scrapeSC.png"
+    },{
+        name: "Portfolio",
+        description: "This is my current portfolio where you can read a little more about me, my work experience, skills and education.",
+        technologies: ["HTML","CSS", "Materialize","Javascript", "Node.js", "jQuery", "React.js"],
+        github: "https://github.com/gael7/react-portfolio",
+        heroku: "http://www.gaelarrambide.com",
+        screenshot: "portfolioSC.png"
     }];
 
     this.state = {

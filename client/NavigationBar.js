@@ -57,7 +57,7 @@ class NavigationBar extends React.Component {
                 <li><div className="userView">
                   <div className="background sidebar-background">
                   </div>
-                  <a href="#!user"><img className="circle" src="images/logo.jpg" /></a>
+                  <a href="#!user"><img className="circle" src="images/me2.jpg" /></a>
                   <a href="#!name"><span className="white-text name">Gael Arrambide</span></a>
                   <a href="#!email"><span className="white-text email">gael_arrambide@hotmail.com</span></a>
                 </div></li>

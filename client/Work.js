@@ -8,7 +8,6 @@ class Work extends React.Component {
     super();
     this.state = {
       title: 'Work',
-      summary: 'My work experience consists mostly on retail where I gain experience with different skills like customer service, merchandising and leadership. My most meaningful job experience was as a tutor for 6 months for kids to build robots using Lego Educational Kits.',
       color: 'grey darken-2',
     };
   }

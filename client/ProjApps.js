@@ -26,7 +26,7 @@ class ProjApps extends React.Component {
       ],
       technologies: ["HTML", "CSS", "Materialize", "jQuery", "NodeJs", "Express", "MySQL", "Sequelize", "Passport"],
       github: "https://github.com/gael7/Cheevr",
-      heroku: "https://alexaquiz.heroku.com",
+      heroku: "#",
       screenshot: "cheevr.png"
     },{
       name: "Antique",

@@ -4,13 +4,21 @@ class WorkExp extends React.Component {
   constructor(){
     super();
     const experience = [{
-      position: "Logistics Sortation Associate",
-      company: "Amazon",
-      dates: "September 2016 - Present",
+      position: "Transportation CSR Bilingual",
+      company: "Logisticare",
+      dates: "July 2017 - Present",
       location: "Austin, TX",
       responsabilities: ["Collaborate to scan an average of 23,000 packages arriving to the warehouse before the sort process.",
       "Achieve to sort and scan an average of 140 packages per hour of the 100 - 120 packages required.",
       "Accomplish to pick routes in less than the 30 minutes average."],
+    },{
+      position: "Logistics Sortation Associate",
+      company: "Amazon",
+      dates: "September 2016 - June 2017",
+      location: "Austin, TX",
+      responsabilities: ["Collaborated to scan an average of 23,000 packages arriving to the warehouse before the sort process.",
+      "Achieved to sort and scan an average of 140 packages per hour of the 100 - 120 packages required.",
+      "Accomplished to pick routes in less than the 30 minutes average."],
     },{
       position: "Instructor",
       company: "American Robotics Academy",

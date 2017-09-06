@@ -8,9 +8,9 @@ class WorkExp extends React.Component {
       company: "Logisticare",
       dates: "July 2017 - Present",
       location: "Austin, TX",
-      responsabilities: ["Collaborate to scan an average of 23,000 packages arriving to the warehouse before the sort process.",
-      "Achieve to sort and scan an average of 140 packages per hour of the 100 - 120 packages required.",
-      "Accomplish to pick routes in less than the 30 minutes average."],
+      responsabilities: ["Collaborate on english and spanish calls for Where is My Ride Department.",
+      "Achieve to assist on an average of 60 calls daily.",
+      "Accomplish to keep a daily after call work below one and a half hour."],
     },{
       position: "Logistics Sortation Associate",
       company: "Amazon",

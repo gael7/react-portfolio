@@ -32,13 +32,13 @@ class PortCard extends React.Component {
       )}
   }
 
-  PortCard.PropTypes = {
-    screenshot: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    technologies: PropTypes.string.isRequired,
-    github: PropTypes.string.isRequired,
-    heroku: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+PortCard.PropTypes = {
+  screenshot: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  heroku: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
   }
 
 export default PortCard;

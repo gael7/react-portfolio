@@ -1,4 +1,5 @@
 import React from 'react';
+import WorkCard from './WorkCard';
 
 class WorkExp extends React.Component {
   constructor(){
@@ -38,7 +39,7 @@ class WorkExp extends React.Component {
     },{
       position: "Photo Sales Associate",
       company: "Walmart",
-      dates: "June 2014 - July 2015",
+      dates: "August 2012 - July 2015",
       location: "Laredo, TX",
       responsabilities: ["Operated photo processing equipment and maintain them clean and their resources above 25%.",
       "Provided outstanding customer service to 8+ people during the operation of the digital photo kiosks.",
@@ -62,26 +63,21 @@ class WorkExp extends React.Component {
         <div className="section">
           <div className="row">
           {this.state.experience.map((exp, index)=>(
-            <div key={index} className="col s12 m12 l12 xl6">
-              <div className="col s12 m6 l4 xl7">
-                <div className="card grey darken-2 hoverable">
-                  <div className="card-content white-text">
-                    <span className="card-title">{exp.position}</span>
-                    <p>{exp.company}</p>
-                    <p><i className="tiny material-icons">date_range</i> {exp.dates}</p>
-                    <p><i className="tiny material-icons">location_on</i> {exp.location}</p>
-                    <br />
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m6 l8 xl5 white-text">
-                <ul id="responsabilities">
-                  {exp.responsabilities.map((res, indexR)=>(
-                    <li key={indexR}><i className="tiny material-icons">chevron_right</i>{res}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>))}
+            index<2 &&
+              <WorkCard key={index} position={exp.position} company={exp.company} dates={exp.dates} location={exp.location} responsabilities={exp.responsabilities} />
+            ))}
+          </div>
+          <div className="row">
+          {this.state.experience.map((exp, index)=>(
+            (index>=2 && index<4) &&
+              <WorkCard key={index} position={exp.position} company={exp.company} dates={exp.dates} location={exp.location} responsabilities={exp.responsabilities} />
+            ))}
+          </div>
+          <div className="row">
+          {this.state.experience.map((exp, index)=>(
+            (index>=4 && index<6) &&
+              <WorkCard key={index} position={exp.position} company={exp.company} dates={exp.dates} location={exp.location} responsabilities={exp.responsabilities} />
+            ))}
           </div>
         </div>
     )

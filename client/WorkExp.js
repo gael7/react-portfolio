@@ -8,9 +8,9 @@ class WorkExp extends React.Component {
       company: "Logisticare",
       dates: "July 2017 - Present",
       location: "Austin, TX",
-      responsabilities: ["Collaborate on english and spanish calls for Where is My Ride Department.",
-      "Achieve to assist on an average of 60 calls daily.",
-      "Accomplish to keep a daily after call work below one and a half hour."],
+      responsabilities: ["Collaborate on English and Spanish calls for Where is My Ride Department.",
+      "Manage to assist on an average of 60 calls daily.",
+      "Achieve to keep a daily after call work below one and a half hour."],
     },{
       position: "Logistics Sortation Associate",
       company: "Amazon",
@@ -24,7 +24,7 @@ class WorkExp extends React.Component {
       company: "American Robotics Academy",
       dates: "September 2016 - December 2016",
       location: "Austin, TX",
-      responsabilities: ["Created an interesting environment for 6 - 12 kids to learn build robots with Lego educational kits on 5 different schools.",
+      responsabilities: ["Created a learning environment for 6 - 12 kids to build robots with Lego educational kits on 5 different schools.",
       "Trained 2 to 3 groups of 3 kids to build the entire robot for the day in less than 45 minutes.",
       "Developed 10 minute activities where the kids can play with the robot they just build."],
     },{
@@ -41,7 +41,7 @@ class WorkExp extends React.Component {
       dates: "June 2014 - July 2015",
       location: "Laredo, TX",
       responsabilities: ["Operated photo processing equipment and maintain them clean and their resources above 25%.",
-      "Provided friendly customer service to 8+ people during the operation of the digital photo kiosks.",
+      "Provided outstanding customer service to 8+ people during the operation of the digital photo kiosks.",
       "Assembled around 10 different specialty items daily like calendars, photo canvas, etc."],
     },{
       position: "Sales Associate",

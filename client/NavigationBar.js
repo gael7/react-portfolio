@@ -6,27 +6,27 @@ class NavigationBar extends React.Component {
         super();
         const sections = [{
           href: "/",
-          icon: "person",
+          icon: "E7FD",
           text: "About Me",
           color: "black-text"
         },{
           href: "/work",
-          icon: "business_center",
+          icon: "eb3f",
           text: "Work Experience",
           color: "grey-text text-darken-2"
         },{
           href: "/portfolio",
-          icon: "web",
+          icon: "E051",
           text: "Portfolio",
           color: "grey-text"
         },{
           href: "/projects",
-          icon: "assignment",
+          icon: "E85D",
           text: "Projects",
           color: "blue-grey-text",
         },{
           href: "/education",
-          icon: "school",
+          icon: "E80C",
           text: "Education",
           color: "blue-text text-darken-4"
         }];
@@ -62,7 +62,7 @@ class NavigationBar extends React.Component {
                   <a href="#!email"><span className="white-text email">gael_arrambide@hotmail.com</span></a>
                 </div></li>
                 {this.state.sections.map((section, index)=>(
-                  <li key={index}><a href={section.href}><i className={"material-icons "+section.color}>{section.icon}</i>{section.text}</a></li>
+                  <li key={index}><a href={section.href}><i className={"material-icons "+section.color}>{String.fromCharCode(parseInt(section.icon,16))}</i>{section.text}</a></li>
                 ))}
                 <br />
                 <li><a className="subheader center">Connect with Me</a></li>

@@ -68,12 +68,12 @@ class NavigationBar extends React.Component {
                 <li><a className="subheader center">Connect with Me</a></li>
                 <div className="row">
                   {this.state.socials.map((social, index2)=>(
-                      <a key={index2} href={social.href}><img className="col s4 circle responsive-img " src={"images/"+social.src} /></a>
+                      <a key={index2} href={social.href}><img className="col s4 circle responsive-img" src={"images/"+social.src} /></a>
                   ))}
                 </div>
               </ul>
 
-                  <a href="/" className="brand-logo center">GA</a>
+                  <a href="#" className="brand-logo center"><img className="gLogo" src="/images/G.png" /></a>
                     <ul className="left">
                       <li><a href="#" data-activates="slide-out" className="button-collapse show-on-large"><i className="material-icons">menu</i></a></li>
                     </ul>

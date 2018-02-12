@@ -46,6 +46,13 @@ class PortApps extends React.Component {
         github: "https://github.com/gael7/react-portfolio",
         heroku: "http://www.gaelarrambide.com",
         screenshot: "portfolioSC.png"
+    },{
+      name: "Pronto Legalizaciones",
+      description: "This is a webpage for Pronto Legalizaciones which works on the import of USA vehicles into Mexico.",
+      technologies: ["HTML", "CSS", "Materialize", "Javascript", "Node.js", "jQuery", "React.js"],
+      github: "https://github.com/gael7/pronto-legalizaciones",
+      heroku: "http://www.prontolegalizaciones.com",
+      screenshot: "pronto.png"
     }];
 
     this.state = {
@@ -63,7 +70,14 @@ class PortApps extends React.Component {
            </div>
            <div className="row">
              {this.state.apps.map((app,index)=>(
-               index>=3 &&
+               (index>=3 && index<6) &&
+               <PortCard key={index} name={app.name} description={app.description} technologies={app.technologies} github={app.github} heroku={app.heroku} screenshot={app.screenshot} />
+
+             ))}
+           </div>
+           <div className="row">
+             {this.state.apps.map((app,index)=>(
+               index>=6 &&
                <PortCard key={index} name={app.name} description={app.description} technologies={app.technologies} github={app.github} heroku={app.heroku} screenshot={app.screenshot} />
 
              ))}
